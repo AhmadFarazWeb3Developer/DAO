@@ -1,0 +1,27 @@
+aside {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  border-bottom: none;
+  padding: 10px 5px;
+}
+
+aside div {
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: blueviolet;
+  margin: 10px 0px;
+  color: white;
+  cursor: pointer;
+}
+
+aside p {
+  text-align: center;
+}
+#vote-btn {
+  background-color: rgb(222, 102, 126);
+  color: white;
+}
