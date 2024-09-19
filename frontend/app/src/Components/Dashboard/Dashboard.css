@@ -1,0 +1,33 @@
+aside {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  border-bottom: none;
+  padding: 30px 5px;
+  background-color: #cdd3d6;
+}
+
+aside div {
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #131842;
+  margin: 10px 0px;
+  /* color: #fbf6e2; */
+  color: #cdd3d6;
+  cursor: pointer;
+}
+
+aside p {
+  text-align: center;
+}
+aside h1 {
+  font-weight: bold;
+  color: #525468;
+}
+#vote-btn {
+  background-color: rgb(222, 102, 126);
+  color: #fbf6e2;
+}

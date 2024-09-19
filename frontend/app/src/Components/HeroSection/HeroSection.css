@@ -1,0 +1,62 @@
+.hero-section {
+  width: 80%;
+  float: right;
+  border-top: none;
+  border-right: none;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 8.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  background-color: #131842;
+}
+.hero-section header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 5px 0px;
+  font-size: 14px;
+  color: #cf8876;
+  font-weight: 500;
+}
+h3 {
+  margin: 5px 0px;
+}
+
+select {
+  border-radius: 2px;
+  padding: 5px 20px;
+  margin: 5px 0px;
+  cursor: pointer;
+  color: #b83d1e;
+  background-color: #eeeeee;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+select option {
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.total-funds-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 1%;
+  right: 0.5%;
+  border: 1px solid #fbf6e2;
+  color: #fbf6e2;
+  opacity: 0.5;
+  border-radius: 4px;
+  padding: 30px 10px;
+}

@@ -1,0 +1,39 @@
+.createProp-box {
+  border: 1px solid #5b6080;
+  width: 50%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.createProp-box h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+form {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  text-align: center;
+  width: 80%;
+  margin: 10px 0px;
+  height: 40px;
+}
+form input:hover {
+  border-radius: 4px;
+  border: 2px solid #e68369;
+}
+
+form button {
+  margin-top: 10px;
+  width: 40%;
+}
