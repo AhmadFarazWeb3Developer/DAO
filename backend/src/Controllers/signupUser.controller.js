@@ -21,6 +21,7 @@ const signupUser = async (req, res) => {
     return res.status(201).json({
       message: "successfully signed up",
       username,
+      success: true,
     });
   } catch (error) {
     console.log("Error in signup controller");

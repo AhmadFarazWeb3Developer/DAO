@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 const useSignup = () => {
+  const [success, setSuccess] = useState(false);
   const signup = async (Input) => {
     const { username, password, confirmPassword } = Input;
     const response = await fetch("http://localhost:8000/api/users/signup", {
@@ -13,6 +15,8 @@ const useSignup = () => {
     const data = await response.json();
     if (response.status === 201) {
       toast.success(`${data.username} ${data.message}`);
+      let success = data.success;
+      setSuccess(success);
     } else {
       toast.error(data.message, data.error);
     }
@@ -21,6 +25,6 @@ const useSignup = () => {
       toast.error(error);
     }
   };
-  return { signup };
+  return { signup, success };
 };
 export { useSignup };

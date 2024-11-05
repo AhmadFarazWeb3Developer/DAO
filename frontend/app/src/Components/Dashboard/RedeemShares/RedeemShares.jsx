@@ -30,8 +30,11 @@ const RedeemShares = () => {
             onChange={(e) => {
               SetShares(e.target.value);
             }}
+            className="input input-primary  placeholder-slate-600"
           />
-          <button onClick={redeemShares}>Redeem</button>
+          <button onClick={redeemShares} className=" btn btn-wide btn-primary">
+            Redeem
+          </button>
         </form>
       </div>
     </>

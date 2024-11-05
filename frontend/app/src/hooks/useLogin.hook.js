@@ -1,6 +1,8 @@
+import { useState } from "react";
 import toast from "react-hot-toast";
 
 const useLogin = () => {
+  const [success, setSuccess] = useState(false);
   const login = async (Input) => {
     const { username, password } = Input;
 
@@ -12,16 +14,18 @@ const useLogin = () => {
       body: JSON.stringify({ username, password }),
     });
 
-    const data = response.json();
+    const data = await response.json();
     if (response.status === 201) {
       toast.success(data.message, data.username, data.success);
       console.log(data.message, data.success);
+      let success = data.success;
+      setSuccess(success);
     } else {
       toast.error(data.message, data.success);
       console.log(data.message, data.success);
     }
   };
-  return { login };
+  return { login, success };
 };
 
 export { useLogin };

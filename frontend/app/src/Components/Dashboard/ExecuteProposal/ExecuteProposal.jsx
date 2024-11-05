@@ -29,8 +29,17 @@ const ExecuteProposal = () => {
       <div className="createProp-box">
         <h2>Execute Proposal</h2>
         <form action="">
-          <input type="text" ref={inputId} placeholder="Enter Proposal ID" />
-          <button type="submit" onClick={executeProposal}>
+          <input
+            type="text"
+            ref={inputId}
+            placeholder="Enter Proposal ID"
+            className=" input input-primary  placeholder-slate-600"
+          />
+          <button
+            type="submit"
+            onClick={executeProposal}
+            className=" btn btn-wide btn-primary mt-0"
+          >
             Execute
           </button>
         </form>

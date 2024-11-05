@@ -39,16 +39,19 @@ const Main = ({ component }) => {
         <div id="investorList" className="lists">
           <h3 id="investorList-heading">Investor's List</h3>
           {InvestorList.map((list, index) => (
-            <p key={index} className="investor-list">
+            <p
+              key={index}
+              className="investor-list card bg-base-200 rounded place-items-center"
+            >
               {list}
             </p>
           ))}
         </div>
         <div id="proposalList" className="lists">
           <h3>Proposal's List</h3>
-          <table>
+          <table className=" table">
             <thead>
-              <tr>
+              <tr className="bg-base-200">
                 <th>Proposal ID</th>
                 <th>Description</th>
                 <th>Amount</th>
@@ -60,7 +63,7 @@ const Main = ({ component }) => {
             </thead>
             <tbody>
               {ProposalList.map((list) => (
-                <tr key={list.id} className="proposal-list">
+                <tr key={list.id} className="proposal-list bg-base-200">
                   <td>{parseInt(list.id)}</td>
                   <td>{list.description}</td>
                   <td>{parseInt(list.amount)}</td>

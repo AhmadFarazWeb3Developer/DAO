@@ -54,6 +54,7 @@ const TransferShares = () => {
             name="amount"
             value={Input.amount}
             onChange={getValues}
+            className=" input input-primary  placeholder-slate-600"
           />
           <input
             type="text"
@@ -61,8 +62,13 @@ const TransferShares = () => {
             name="address"
             value={Input.address}
             onChange={getValues}
+            className=" input input-primary  placeholder-slate-600"
           />
-          <button type="submit" onClick={transaferShares}>
+          <button
+            type="submit"
+            onClick={transaferShares}
+            className=" btn btn-wide btn-primary  placeholder-slate-600"
+          >
             Transfer
           </button>
         </form>

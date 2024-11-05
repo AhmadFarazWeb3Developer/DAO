@@ -39,13 +39,16 @@ const CreateProposal = () => {
             name=""
             id=""
             placeholder="Proposal Descripton"
+            className="input input-bordered input-primary   placeholder-slate-600 "
           />
+
           <input
             ref={amountInput}
             type="text"
             name=""
             id=""
             placeholder="Amount in (Wei)"
+            className="input input-bordered input-primary  placeholder-slate-600 "
           />
           <input
             ref={addressInput}
@@ -53,8 +56,14 @@ const CreateProposal = () => {
             name=""
             id=""
             placeholder="Recipient Address"
+            className="input input-bordered input-primary  placeholder-slate-600 "
           />
-          <button onClick={initiateProposal}>Create</button>
+          <button
+            className="btn btn-wide btn-primary "
+            onClick={initiateProposal}
+          >
+            Create
+          </button>
         </form>
       </div>
     </>

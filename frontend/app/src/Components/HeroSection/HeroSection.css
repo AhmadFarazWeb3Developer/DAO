@@ -11,7 +11,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 10px;
-  background-color: #131842;
+  background-color: #011220;
 }
 .hero-section header {
   display: flex;
@@ -23,7 +23,7 @@
 h2 {
   margin: 5px 0px;
   font-size: 14px;
-  color: #cf8876;
+  color: #526692;
   font-weight: 500;
 }
 h3 {
@@ -32,16 +32,14 @@ h3 {
 
 select {
   border-radius: 2px;
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
   margin: 5px 0px;
   cursor: pointer;
-  color: #b83d1e;
-  background-color: #eeeeee;
   font-weight: 700;
   letter-spacing: 1px;
 }
 select option {
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 1px;

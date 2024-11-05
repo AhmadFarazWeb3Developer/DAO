@@ -35,7 +35,11 @@ const Dashboard = () => {
           <p>Redeem Shares</p>
         </div>
         <br />
-        <div onClick={() => setComponent(<Vote />)} id="vote-btn">
+        <div
+          onClick={() => setComponent(<Vote />)}
+          id="vote-btn"
+          className=" btn  btn-success  "
+        >
           <p>Vote Proposal</p>
         </div>
       </aside>

@@ -6,14 +6,14 @@ aside {
   height: auto;
   border-bottom: none;
   padding: 30px 5px;
-  background-color: #cdd3d6;
+  background-color: #c1c4d2;
 }
 
 aside div {
   padding: 10px 0px;
   width: 100%;
   border-radius: 4px;
-  background-color: #131842;
+  background-color: #011220;
   margin: 10px 0px;
   /* color: #fbf6e2; */
   color: #cdd3d6;
@@ -28,6 +28,6 @@ aside h1 {
   color: #525468;
 }
 #vote-btn {
-  background-color: rgb(222, 102, 126);
-  color: #fbf6e2;
+  /* background-color: rgb(222, 102, 126); */
+  color: #011220;
 }

@@ -34,8 +34,14 @@ const Vote = () => {
             name=""
             id=""
             placeholder="Enter Proposal ID"
+            className=" input input-success placeholder-slate-600"
           />
-          <button type="submit" id="vote-btn" onClick={voteProposal}>
+          <button
+            type="submit"
+            id="vote-btn"
+            onClick={voteProposal}
+            className=" btn btn-success btn-primary "
+          >
             Vote
           </button>
         </form>
